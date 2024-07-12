@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import Navbar from '../components/Navbar';
+const apiUrl = process.env.REACT_APP_API_BASE_URL;
 export default function Signup() {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
   // console.log("first_one ",credentials.geolocation);
@@ -40,7 +41,7 @@ export default function Signup() {
     // e.preventDefault();
     
     console.log(credentials);
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
+    const response = await fetch(`${apiUrl}/api/auth/createuser`, {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',

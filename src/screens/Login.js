@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 import { useNavigate, Link } from 'react-router-dom'
+const apiUrl = process.env.REACT_APP_API_BASE_URL;
 export default function Login() {
   const [credentials, setCredentials] = useState({ email: "", password: "" })
   let navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch(`${apiUrl}/api/auth/login`, {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',

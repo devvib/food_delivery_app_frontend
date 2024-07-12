@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCart, useDispatchCart } from '../components/ContextReducer';
-
+const apiUrl = process.env.REACT_APP_API_BASE_URL;
 export default function Cart() {
   let data = useCart();
   let dispatch = useDispatchCart();
@@ -15,7 +15,7 @@ export default function Cart() {
 
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("http://localhost:5000/api/auth/orderData", {
+    let response = await fetch(`${apiUrl}/api/auth/orderData`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
