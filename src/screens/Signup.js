@@ -79,17 +79,17 @@ export default function Signup() {
 
             <div className="m-3">
               <div  className="form-label">Name</div>
-              <input type="text" className="form-control" name='name' value={credentials.name} onChange={onChange} aria-describedby="emailHelp" />
+              <input type="text" className="form-control" name='name' placeholder='Name' value={credentials.name} onChange={onChange} aria-describedby="emailHelp" />
             </div>
 
             <div className="m-3">
               <div className="form-label">Email address</div>
-              <input type="email" className="form-control" name='email' value={credentials.email} onChange={onChange} aria-describedby="emailHelp" />
+              <input type="email" className="form-control" name='email' placeholder='Email address' value={credentials.email} onChange={onChange} aria-describedby="emailHelp" />
             </div>
 
             <div className="m-3">
               <div  className="form-label">Address</div>
-              <input type="text" className="form-control" name='geolocation' placeholder='"Current address"' value={credentials.geolocation} onChange={onChange} aria-describedby="emailHelp" />
+              <input type="text" className="form-control" name='geolocation' placeholder='Current address' value={credentials.geolocation} onChange={onChange} aria-describedby="emailHelp" />
             </div>
 
             {/* <div className="m-3">
@@ -98,7 +98,7 @@ export default function Signup() {
             
             <div className="m-3">
               <div  className="form-label">Password</div>
-              <input type="password" className="form-control" value={credentials.password} onChange={onChange} name='password' />
+              <input type="password" className="form-control" value={credentials.password} onChange={onChange} placeholder='Password' name='password' />
             </div>
 
             <button type="submit" className="m-3 btn btn-success" onClick={handleSubmit}>Submit</button>
