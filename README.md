@@ -19,7 +19,7 @@ This is the frontend part of the **Food Delivery App**, built using **React**. T
 
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/devvib/food_delivery_app_frontend.git)
+   git clone https://github.com/devvib/food_delivery_app_frontend.git
 
 ## URL
 [Frontend url](https://food-delivery-app-frontend-c73i.onrender.com)
