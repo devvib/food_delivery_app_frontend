@@ -7,6 +7,7 @@ This is the frontend part of the **Food Delivery App**, built using **React**. T
 - **Cart Functionality**: Users can add items to their cart and manage orders.
 - **Search Bar**: Quickly find food items from the menu.
 - **Location Feature**: Users can input their location to get delivery options.
+- **Order History**:Users can see their past orders
 
 ## Technologies Used
 
