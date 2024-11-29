@@ -25,7 +25,7 @@ This is the frontend part of the **Food Delivery App**, built using **React**. T
 ## URL
 [Frontend url](https://food-delivery-app-frontend-c73i.onrender.com)
 
-For frontend to run go to backend link and open it (this is render's problem they make inactive the service sites after a period of in inactivity)
+For frontend to run, go to backend link and open it (this is render's problem they inactive the service sites after a period of in inactivity)
 
 [Backend url](https://food-delivery-app-backend-0yhr.onrender.com)
 
